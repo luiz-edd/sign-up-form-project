@@ -1,14 +1,17 @@
 :root {
-    --left-page-max-width: 400px;
+    --left-page-max-width: 500px;
     --right-page-max-width: calc(2 * var(--left-page-max-width))
 }
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
 }
 * {
     box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+font-family: 'Love Ya Like A Sister', cursive;
+font-family: 'Trispace', sans-serif;
 }
 
 
@@ -17,13 +20,43 @@ body {
     justify-content: center;
     height: 100vh;
 }
+
 .left-page {
     max-width: var(--left-page-max-width);
-    flex: 1 1 auto;
+    flex: 1 1 0;
 }
+.image-container {
+    height: 100%;
+    position: relative;
+}
+img[src="img/pilars-of-creation.png"]{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.card-body {
+    position: absolute;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.454);
+  /* opacity: 0.6; */
+  /* color: white; */
+  top: 10rem;
+  text-align: center;
+  font-size: 2em;
+  font-family: roboto;
+  padding: 20px;
+}
+.card-heading {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
+
+
 .right-page {
     max-width: var(--right-page-max-width);
-    flex: 2 2 auto;
+    flex: 2 2 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,14 +64,19 @@ body {
 .right-page > * {
     flex: 1 1 auto;
     border: solid 1px blueviolet;
-    /* padding-left: 40px; */
     padding: 20px 30px;
 }
+
+
 /* right page section 1 */
 .main-frase {
     display: flex;
     align-items: flex-end;
+    font-weight: 500;
+    font-size: 1.3rem;
 }
+
+
 /* right page section 2  */
 .main-form {
     
@@ -56,14 +94,62 @@ body {
     gap: 50px;
     margin: 0;
     padding: 0;
+    justify-content: start;
+    align-items: flex-start;
+    align-items: start;
+    justify-self: start;
 }
 .main-form div {
     display: flex;
+    flex: 0 1 auto;
     flex-direction: column;
+
 }
-.main-form div > input {
-    width: 225px;
-    height: 25px;
+.main-form div > label {
+    /* width: 225px;
+    height: 25px; */
+    font-size: 1rem;
+}
+.main-form input {
+    margin-top: 3px;
+    border: 1.5px solid #E5E7EB;
+    border-radius: 3px;
+    font-size: 1.2rem;
+   
+}
+.main-form input:hover {
+    border: 1.5px solid #cddeff;
+}
+.main-form input:focus {
+    outline: 1.5px solid #89b0ff;
+    border: 1.5px solid white;
+    box-shadow: 1px 3px 5px rgba(99, 99, 99, 0.382);
+} */
+
+
+.main-form input:invalid {
+    border-color: red;
+    background-color: brown;
+}
+.main-form input:valid {
+	border-color: green;
 }
 
+
 /* right page section 3  */
+
+button[form="myForm"]{
+  background-color: #bb6427; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px rgba(99, 99, 99, 0.382);
+}
+button[form="myForm"]:hover {
+    outline: solid 1.5px #6f9fff;
+}

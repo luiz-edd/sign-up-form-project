@@ -8,77 +8,81 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/code.js"></script>
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400&family=Love+Ya+Like+A+Sister&family=Trispace:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="main-page">
         <div class="left-page">
-
+            <div class="image-container">
+                <img src="img/pilars-of-creation.png" alt="">
+                <div class="card-body">
+                    <div class="card-heading">
+                        Start of a life
+                    </div>
+                </div>
+            </div>
         </div>
+        
         <div class="right-page">
             <div class="main-frase">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam enim tenetur necessitatibus illo
-                        debitis eius in aperiam itaque reprehenderit dolorem similique repudiandae doloribus dolorum illum
+                        debitis eius in aperiam itaque reprehenderit dolorem similique repudiandae doloribus dolorum
+                        illum
                         ea, blanditiis numquam nesciunt suscipit facilis excepturi incidunt, voluptatibus, nobis odit
                         sapiente. Deleniti, earum debitis.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque dolorem perferendis, architecto ab
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque dolorem perferendis, architecto
+                        ab
                         autem minus.</p>
                 </div>
             </div>
             <div class="main-form">
                 <h1>Lets do this!</h1>
-                <form action="">
-                    
-                        
+                <form action="" id="myForm">
+                    <li>
+                        <ul>
+                            <div>
 
-                            
-                                <li>
-                                    <ul>
-                                        <div>
+                                <label for="first-name">FIRST NAME</label>
+                                <input placeholder="" type="text" id="first-name" name="client-firt-name" required>
 
-                                            <label for="first-name">FIRST NAME</label>
-                                            <input type="text" id="first-name" name="client-firt-name">
+                            </div>
+                            <div>
+                                <label for="last-name"> LAST NAME</label>
+                                <input type="text" id="last-name" name="client-last-name" required>
+                            </div>
 
-                                        </div>
-                                        <div>
-                                            <label for="last-name"> LAST NAME</label>
-                                            <input type="text" id="last-name" name="client-last-name">
-                                        </div>
+                        </ul>
+                        <ul>
+                            <div>
 
-                                    </ul>
-                                    <ul>
-                                        <div>
+                                <label for="email" id="email">EMAIL</label>
+                                <input type="email" name="client-email" id="email" required>
+                            </div>
+                            <div>
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" id="phone" name="client-phone-number" required>
+                            </div>
+                        </ul>
+                        <ul>
+                            <div>
+                                <label for="password">PASSWORD</label>
+                                <input type="password" name="client-password" id="password" required>
+                            </div>
 
-                                            <label for="email" id="email">EMAIL</label>
-                                            <input type="email" name="client-email" id="email">
-                                        </div>
-                                        <div>
-                                            <label for="phone">PHONE NUMBER</label>
-                                            <input type="tel" id="phone" name="client-phone-number">
-                                        </div>
-                                    </ul>
-                                    <ul>
-                                        <div>
-                                            <label for="password">PASSWORD</label>
-                                            <input type="password" name="client-password" id="password">
-                                        </div>
-
-                                        <div>
-                                            <label for="confirm-password">CONFIRM PASSWORD</label>
-                                            <input type="password" name="client-confirm-password"
-                                                id="confirm-password">
-                                        </div>
-                                    </ul>
-                                </li>
-                            
-
-                       
-                    
+                            <div>
+                                <label for="confirm-password">CONFIRM PASSWORD</label>
+                                <input type="password" name="client-confirm-password" id="confirm-password" required>
+                            </div>
+                        </ul>
+                    </li>
                 </form>
             </div>
             <div class="main-footer">
-                <button> Create Accoubt</button>
+                <button type="submit" form="myForm"> Create Account</button>
                 <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
